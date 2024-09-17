@@ -1,0 +1,81 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // border-bottom: 1px solid #ccc;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: lightblue;
+    // border: 2px solid var(--main-color);
+    padding: 8px 40px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px); /* Apply blur effect to the background content */
+    z-index: 1; /* Ensure the overlay is above other content */
+}
+
+.left-items {
+    display: flex;
+    height: 34px;
+    margin-left: 40px;
+}
+
+.right-items {
+    height: 34px;
+    margin-right: 40px;
+    display: flex;
+}
+
+.items {
+    font-size: 22px;
+    font-weight: 600;
+    height: 30px;
+    padding: 0 16px;
+    border-radius: 12px;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    box-shadow: 4px 4px var(--main-color);
+    margin-right: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        box-shadow: 0px 0px var(--main-color);
+        transform: translate(3px, 3px);
+    }
+}
+
+.items-login {
+    cursor: pointer;
+    height: 30px;
+    width: 40px;
+    padding: 2px;
+    border-radius: 12px;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+    color: var(--font-color);
+    margin-left: 16px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        box-shadow: 0px 0px var(--main-color);
+        transform: translate(3px, 3px);
+    }
+}

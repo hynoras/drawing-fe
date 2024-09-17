@@ -1,0 +1,63 @@
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root {
+    --primary: #fe2c55;
+    --black: #000;
+    --white: #fff;
+    --text-color: #161823;
+    --default-layout-header-height: 100px;
+    --admin-layout-header-height: 58px;
+    --default-layout-width: 1920px;
+    --default-layout-horizontal-spacer: 24px;
+    --input-focus: #2d8cf0;
+    --font-color: #323232;
+    --font-color-sub: #666;
+    --bg-color: beige;
+    --main-color: black;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem ;
+    line-height: 1.5;
+    text-rendering: optimizespeed;
+}
+
+button,
+input,
+[tabindex] {
+    outline: none;
+    border: none;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    list-style: none;
+    background-color: transparent;
+}
+
+li {
+    display: list-item;
+}
+
+button {
+    background: transparent;
+}
